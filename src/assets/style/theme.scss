@@ -1,0 +1,98 @@
+.crx-class {
+  color: pink;
+}
+
+//hover tool
+.highlighter--highlighted.highlighter--hovered {
+  box-shadow: 0 1px 0 grey;
+}
+
+#highlighter--hover-tools {
+  position: fixed;
+  padding-bottom: 8px;
+  z-index: 10000;
+}
+
+#highlighter--hover-tools--container {
+  position: relative;
+  border-radius: 5px;
+  padding: 1px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* When changing this, also update moveToolbarToHighlight() in hoverTools.js */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.25));
+}
+
+.highlighter--icon-change-color{
+  cursor: pointer;
+}
+
+.highlighter--icon {
+  display: inline-block;
+  height: 14.67px;
+  width: 14.67px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.highlighter--icon:hover {
+  filter: opacity(0.92);
+}
+
+.highlighter--icon-copy {
+  // background-image: url("chrome-extension://__MSG_@@extension_id__/images/file_copy.svg");
+}
+
+.highlighter--icon-delete {
+  // background-image: url("chrome-extension://__MSG_@@extension_id__/assets/img/trash.svg");
+}
+
+
+.color_box {
+  height: 22px;
+  width: 22px;
+  border-radius: 5px;
+  margin-right: 12px;
+  z-index: 10000;
+}
+
+.tooltip_head {
+  display: flex;
+  width: 100%;
+  height: 26px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.5px !important;
+  font-size:12pt;
+  margin-top: 0;
+}
+.tooltip_head span{
+  font-size: 11pt;
+}
+
+.tooltip_head .tooltip_icon {
+  height: 14.67px;
+  width: 14.67px;
+  margin-top: 2px;
+}
+
+.color_picker {
+  padding: 5px;
+}
+
+.color_box_container {
+  display: flex;
+}
+
+.color_box_selected {
+  box-shadow: 0 0 0 2px #f3f5f6 inset;
+  box-sizing: border-box;
+  border: 1px solid #1c56eb;
+}

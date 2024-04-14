@@ -1,0 +1,10 @@
+{
+  "extensionDescription": {
+    "description": "Extension description",
+    "message": "All-in-one bookmark manager"
+  },
+  "extensionName": {
+    "description": "Extension name",
+    "message": "Marqly - Bookmark Manager"
+  }
+}
